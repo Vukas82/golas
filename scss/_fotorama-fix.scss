@@ -1,0 +1,17 @@
+    /******** FOTORAMA BUTTONS ********/
+.fotorama, .fotorama * { max-width: 100%;}
+.fotorama__wrap {margin: 0px auto!important;}
+
+.fotorama__arr{position:absolute;width:36px!important;height:67px!important;top:50%;margin-top:-16px}
+
+.fotorama__arr--prev{left:2px;background-position:-1px -70px!important;}
+
+.fotorama__arr--next{right:2px;background-position:-37px -70px!important;}
+
+.fotorama__fullscreen-icon {background-position:-87px -109px!important;}
+
+
+.fotorama__arr,.fotorama__fullscreen-icon,.fotorama__video-close,.fotorama__video-play {
+    background:url(../images/icons-buttons.png) no-repeat; background-repeat:no-repeat;
+}
+    /******** /FOTORAMA BUTTONS ********/

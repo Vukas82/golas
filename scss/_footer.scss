@@ -1,0 +1,101 @@
+footer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #232d35;
+    background-image: url(../images/dark-bg.png);
+    border-top: 26px solid $boja;
+    
+    * { 
+        color: #dddddd;
+        &:hover { color: white;}
+    }
+    
+    p { color: #dddddd;}
+    p:hover { cursor: default;}
+    
+    #footer {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 1280px;
+        padding: 40px 20px 0 20px;
+        
+
+        
+        .f-social-icons {
+            position: relative;
+            display: inline-block;
+            padding: 20px 20px;
+            
+            a {
+                position: relative;
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                margin: 20px;
+                
+                &:before {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    left: 0;
+                    top: 0;
+                    background-image: url(../images/ikonice.png);
+                }
+                &.facebook:before { background-position: -0px -82px;}
+                &.facebook:hover:before { background-position: -0px -112px;}
+                &.instagram:before { background-position: -30px -82px;}
+                &.instagram:hover:before { background-position: -30px -112px;}
+                &.pinterest:before { background-position: -60px -82px;}
+                &.pinterest:hover:before { background-position: -60px -112px;}
+                &.twitter:before { background-position: -90px -82px;}
+                &.twitter:hover:before { background-position: -90px -112px;}
+                &.youtube:before { background-position: -120px -82px;}
+                &.youtube:hover:before { background-position: -120px -112px;}
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.design-copy-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: #131b21;
+}
+
+.design-copy {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 1240px;
+    
+    a,p {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        padding: 10px;
+        line-height: 50px;        
+        font-weight: 400;
+        font-size: 13px;
+        color: $svetlo-siva;
+    }
+    
+    .design-by { float: left;}
+    .copyright { float: right;}
+}

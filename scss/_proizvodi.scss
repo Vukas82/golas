@@ -1,0 +1,244 @@
+.proizvodi-meni, .proizvodi-box, .proizvod-stranica {
+    position: relative;
+    display: inline-table;
+    vertical-align: top;
+}
+
+.proizvodi-meni {
+    width: 29%;
+    margin-bottom: 30px;
+}
+.proizvodi-box, .proizvod-stranica {
+    width: 68%;
+}
+
+/******** SIDEBAR *******/
+@import '_proizvodi-sidebar.scss';
+/******** SIDEBAR *******/
+
+.proizvod-box {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 31.33%;
+    margin: 0 1% 20px 1%;
+    border: 1px solid $svetlo-siva;
+    padding: 15px;
+    
+    img {
+        position: relative;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        padding-bottom: 26px;
+    }
+    
+    .overlay {
+        background-color:rgba(255,255,255,0);
+            
+        &:before {
+                content:'';
+                width: 60px;
+            height: 60px;
+            background:url(../images/icons-buttons.png);
+            background-repeat: no-repeat;
+            background-position: -140px 0;
+                position:absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 8rem;
+                font-family: 'Open Sans', sans-serif;
+                color: $boja;
+                opacity: 0;
+                                                
+                }
+        
+            
+        }
+    
+    .naziv-proizvoda {
+        position: absolute;
+        width: 90%;
+        top: 100%;
+        transform: translateY(-100%);
+        text-align: center;
+        z-index: 99;
+        background-color: rgba(255,255,255,0.6);
+        
+        p, strong {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            color: $siva;
+            font-weight: 400;
+            text-align: center;
+            line-height: 1.2;
+        }
+    }
+    
+
+    &:hover {
+        border: 1px solid $boja;
+        
+        .naziv-proizvoda {transform: translateY(-120%); }
+        .overlay {
+            background-color:rgba(255,255,255,0.7);
+            
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.proizvod-box, .proizvod-box * {
+    -webkit-transition:all 0.4s ease-out;
+	-moz-transition:all 0.4s ease-out;
+	-o-transition:all 0.4s ease-out;
+	transition:all 0.4s ease-out;
+}
+    
+
+
+/*********** 1 PROIZVOD - STRANICA***************/
+.proizvod-stranica {
+    margin: 0 1% 20px 1%;
+}
+.proizvod-galerija, .proizvod-specifikacije {
+    position: relative;
+    display: inline-table;
+    vertical-align: top;
+}
+
+.proizvod-galerija{
+    width: 56%;
+    border: 1px solid $svetlo-siva;
+    margin-bottom: 25px;
+    
+    & * {
+        max-width: 100%;
+    }
+}
+.proizvod-lokacija {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding:0px 1%;
+    font-size: 24px; font-size: 2.4rem;
+    
+    h3 {
+        color: $sivi-naslov;
+        display: inline;
+        
+        span {
+            color: $boja;
+        }
+    }
+}
+
+
+
+.proizvod-specifikacije{
+    width:29%;
+    margin: 0 0 0 1%;
+    
+    .naslov {
+        position: relative;
+        display: block;
+        padding-bottom: 2px;
+        margin-bottom: 20px;
+        
+        h5 {
+            font-size: 18px; font-size: 1.8rem;
+            color: $sivi-naslov;
+            
+            
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            width: 54px;
+            height: 7px;
+            background-color: $boja;
+            margin-left: 0px;
+            bottom: -8px;
+            }
+    }
+    
+}
+
+.specifikacija-tip {
+    position: relative;
+    display: block;
+    padding:15px 0 0;
+    font-size: 16px; font-size: 1.6rem;
+    
+    p {
+        padding: 0 0 2px 0;
+        color: $boja;
+        margin-bottom: 0;
+    }
+}
+.specifikacija {
+    
+    p {
+        padding: 0 0 2px 0;
+        margin-bottom: 0;
+        /* font-family: $font; */
+        color: $sivi-font;
+        font-weight: 400;
+    }
+    
+}
+
+/* RASPOLOZIVE BOJE DRESA */
+.boje-boks {
+    position: relative;
+    display: block;
+    padding: 10px 0;
+}
+.boja-dresa {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin: 1px;
+    border: 1px solid $svetlo-siva;
+}
+
+
+/* PAGINACIJA */
+.paginacija {
+    position: relative;
+    width: 100%;
+    display: block;
+    clear: both;
+    padding: 20px 0;
+}
+.broj-stranice {
+    @extend .naslov;
+    position: relative;
+    display: inline-block;
+    padding: 8px 12px!important;
+    border: 1px solid $boja;
+    /* color: $boja!important; */
+    color: $siva!important;
+    font-size: 14px!important;
+    margin: 2px;
+    
+    &:hover, &.aktivna-stranica {
+        background-color: $boja;
+        color: white!important;
+    }
+    
+    &.sledeca-stranica:before {
+        content: '>';
+        position: relative;
+    }
+    
+    &.prethodna-stranica:before {
+        content: '<';
+        position: relative;
+    }
+    
+}

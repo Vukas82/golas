@@ -1,0 +1,78 @@
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+.column {
+	position:relative;
+	padding-bottom: 10px; /*dodato*/
+
+   -webkit-transition:all 0.4s ease;
+   -moz-transition:all 0.4s ease;
+   -o-transition:all 0.4s ease;
+   transition:all 0.4s ease;
+}
+
+@media (max-width:46rem) {
+	.column { margin-bottom:20px; width: 98%; margin: 0 auto;}
+	nav { height:auto;}
+}
+@media (max-width: 760px) {
+	.column.fourth { width:80%; margin:0 auto; display:inline-block;}	
+	.column.fifth { width:30%; margin:0 auto; display:inline-table;}	
+}
+
+@media (max-width: 560px) {
+	.column.fourth { width:95%; margin:0 auto;}	
+}
+
+@media (min-width: 46rem) {
+  .column {
+    float: left;
+    margin-left: 1%; /*sve je bilo 1rem*/
+    margin-right: 1%;
+	  box-sizing:border-box;
+  }
+  
+  .column.full { width: 98%; }
+  .column.two-thirds { width: 48%; }
+  .column.half { width: 48%; }
+  .column.third { width: 48%; }
+  .column.third.poslednji { width: 98%; }
+  .column.fourth { width: 48%; }
+  .column.fifth { width: 48%; }
+  .column.flow-opposite { float: right; }  
+}
+@media (min-width: 56rem) {
+  .column {
+    float: left;
+    padding-left: 10px; /*sve je bilo 1rem*/
+    padding-right: 10px;
+	  box-sizing:border-box;
+  }
+  
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 48%; }
+  .column.third { width: 31.3%; }
+  .column.third.poslednji { width: 31.3%; }
+  .column.fourth { width: 23%; }
+  .column.fifth { width: 20%; }
+  .column.flow-opposite { float: right; }  
+}
+
+.row{ position:relative; padding: 30px; padding: 10px 5px 0 5px; /*width: 75%;*/
+width: 100%; max-width: 1200px; margin: 0 auto; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all 0.4s ease; -moz-transition: all 0.4s ease; -o-transition: all 0.4s ease; transition: all 0.4s ease;
+   
+}
+.row p, column.full li{
+   line-height: 1.5em;
+}

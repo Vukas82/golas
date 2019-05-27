@@ -1,0 +1,224 @@
+
+@media (max-width: 970px) {
+    .trecina { width: 50%!important;}
+    
+    .trecina.twitterfeed { float: none!important;}
+}
+
+@media (max-width:925px) {
+    .proizvod-specifikacije {width: 100%;}
+    a.master-centri {
+        font-size: 16px; font-size: 1.6rem!important;
+        padding: 2px 15px!important;
+    }
+    .master-centri-logo img {
+        height: 30px;
+    }
+    .vesti .vest-box { width: 48.5%; }
+}
+@media (max-width:900px) {
+    #slider p { max-width: 95%;}
+    #slider p:after { display: none;}
+    .polovina { width: 100%!important; margin-bottom: 20px!important;}
+    .fourth, .third {width: 50%!important;}
+    .third { margin-left: auto!important; margin-right: auto!important; margin-bottom: 30px!important;}
+    .glavni-naslov.naslov-levo { text-align: center; margin-bottom: 20px;}
+    
+    .proizvod-box { width:48%;}
+     /* #slider {margin-bottom: -80px;} */
+    .sport-box { width: 48%;}
+    .design-by, .privacy, .copyright { display: block; width: 100%; margin-bottom: 20px; text-align: center;}
+    
+}
+
+@media (max-width:860px) {
+    .kontakt-box-100 .kontakt-box { width: 100%;}
+}
+
+@media (max-width:850px) {
+    .program {
+        width: 49%!important;
+    }
+    .p-naslov h3 { font-size: 24px!important;}
+    
+    
+    .podmeni li { width: 80px!important;}
+    .podmeni, .fiksiran .podmeni {
+        li a strong { font-size: 12px!important;}
+        li > a { padding: 6px 5px;}
+    }
+}
+
+@media (max-width:800px) {
+    /* #slider {margin-bottom: -40px;} */
+    .owl-item .caption {top: 50%;}
+    .glavni-naslov {
+        h3 {
+            &:before {
+            width: 24px;
+            margin-left: -34px;
+            }
+        
+            &:after {
+                width: 24px;
+            }
+        }
+    }
+    #footer-sportska-oprema {padding: 0 40px;}
+    .footer-box { width: 50%;}
+    .kontakt-veliki-box {width: 80%;}
+    .kontakt-veliki-box { border-bottom: 1px solid #ededed;}
+    .proizvodi-meni.jedanproizvod { width: 100%;}
+    .proizvod-stranica {width: 100%; /* margin-top: 20px; */}
+    .proizvod-specifikacije {width: 48%;}
+}
+
+@media (max-width:750px) {
+    #slider p.s-main-message { display: none;}
+    
+    .delatnosti-100 .delatnosti .delatnost-box { width: 32%; margin-bottom: 25px;}
+    
+    .kontakt-polovina { width: 100%;}
+    
+    .proizvodi-box/* , .proizvod-stranica */ {width: 62%;}
+    .proizvodi-meni {width: 37%;}
+    .proizvod-box { width:98%;}  
+    .master-centri-slider { position: relative; border-bottom: 1px solid $svetlo-siva;}
+    
+    .footer-info-block, .kat-info, .footer-info-block .kat-info {display: block;}
+    .footer-info-block .info {
+        text-align: center;
+    }
+    .footer-info-block .info a {
+            background-color: $boja;
+            padding: 10px 50px;
+            position: relative;
+            display: block;
+        
+            &:hover {
+                background-color: $siva;
+                color: white;
+            }
+        }
+    .heading {
+        text-align: center;
+        
+        h1 { display: block; width: 100%;}
+        
+        .telefon-box { 
+            width: 33%;
+            margin: 0;
+            padding: 4px 10px 0px 10px;
+            background-color: darken($boja,10%);
+        
+            &:before {
+                position: relative; display: inline-table; vertical-align: top;
+                padding-left: 0;
+                margin-right: 28px;
+                left: 0;
+            }
+            &:after {
+                content: none; 
+            }
+        }
+        
+        .header-social {
+            margin:0;
+            width: auto;
+            text-align: center;
+            padding: 4px 0px 2px;
+            vertical-align: top;
+        }
+        
+    }
+    
+    .proizvod .proizvod-podaci { width: 100%;}
+    .proizvod .proizvod-slika { display: block; width: 70%; margin: 0 auto 20px;}
+    
+    
+    .kontakt-box-100 .kontakt-box .kontakt-podaci>div { width: 100%; text-align: center!important;}
+    .kontakt-box-100 .kontakt-box .kontakt-podaci>div * { padding-left: 0!important; padding-right: 0!important;}
+    .kontakt-podatak-tip, .kontakt-podatak-tip p, .kontakt-podatak, .kontakt-podatak a, .kontakt-podatak p { width: 100%!important; text-align: center!important;}
+}
+
+@media (max-width:46rem) {
+    .prodajni-objekti .image-box {height:250px;}
+    
+    .vesti .vest-box { width: 100%; }
+    
+}
+
+
+@media(max-width:720px) {
+    section#why-us .boksevi .boks { width: 49%; margin-bottom: 6px;}
+    
+    footer .trecina { width: 100%!important;}
+}
+
+
+@media (max-width:675px) {
+    .podmeni { display: none;}
+}
+
+@media (max-width:600px) {
+    .slider-wrap /* #slider */ {display: none!important; margin-bottom: 0;}
+    #podmeni-100 { position: relative; transform: translateY(0); background-color: white;}
+    #sportska-oprema { margin-top:0; }
+    .sport-box { width: 96%;}
+    /* .image-box { height: 200px;} */
+    .sport-ikona {display: block;}
+    .kontakt-veliki-box { width: 100%;}
+    .proizvod .proizvod-slika { width: 100%;}
+}
+
+@media (max-width:480px) {
+    section#why-us .boks img { width: 60px}
+    section#why-us .boksevi .boks p {font-size: 18px;}
+}
+
+@media screen and (max-width: 1020px) {
+	/* #menu is the original menu */
+    
+    .heading-100 .heading {padding-left: 10px;}
+    .header-100 {padding: 0;}
+
+}
+
+@media screen and (max-width: 992px) {
+
+	#menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+        width: 100%;
+	}
+    
+    .header .intro { 
+        margin: 0;
+        width: auto!important;
+        position: absolute;
+        /* top: -53px; */
+        top: -3px;
+        right: 2px;
+    }
+    .main-logo { display: none;}
+    
+    #content-left {
+        position: absolute;
+        top: 0; 
+    }
+    
+    .slicknav_btn {
+        background-color: transparent;
+         background-color: $boja;
+        padding: 9px 10px;
+        border-radius: 3px;        
+    }
+    
+    .slicknav_btn:hover, .slicknav_btn.slicknav_open {
+        background-color: $boja;
+    }
+
+}

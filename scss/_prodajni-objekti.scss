@@ -1,0 +1,33 @@
+.prodajni-objekti {
+    .overlay {background-color:rgba(0,0,0,0);}
+    .image-box {max-height: 310px;}
+    .image-box:hover {
+        .overlay {
+            background-color:rgba(0,0,0,0.6);
+        }
+    }
+    .column.third {
+        padding: 20px;
+    }
+}
+.lupa {
+    position: absolute;
+    width: 45px;
+    height: 47px;
+    display: inline-block;
+    background-image: url(../images/icons-buttons.png);
+    background-position: 0 -153px;
+    top:50%;
+     -webkit-transform:translateY(-50%);
+      -ms-transform:translateY(-50%);
+          transform:translateY(-50%);
+    opacity: 0;
+}
+.overlay:hover {
+    .lupa {opacity: 1;}
+}
+
+.fancybox-title {
+    font-family: "Source Sans Pro";
+    font-style: italic;
+}
